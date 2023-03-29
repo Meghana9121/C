@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-int N;
+long int N;
 printf("Enter the number:");
 scanf("%d",&N);
 if(N%5==0){
