@@ -1,6 +1,7 @@
 #include<stdio.h>
-int spread(int N){
-  return 2*N-2;
+int spread(int N)
+{
+    return 2*N-2;
 }
 int main()
 {
