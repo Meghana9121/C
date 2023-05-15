@@ -15,7 +15,7 @@ int compare(const void* num1, const void* num2) // comparing function
     return 0;  
 }  
   
-  long long int diff(int arr[],int n){
+  void diff(int arr[],long long int n){
      int sum = 0;
      qsort(arr,n,sizeof(int),compare);
      sum += abs(arr[n-1]-arr[n-2]);
@@ -25,13 +25,13 @@ int compare(const void* num1, const void* num2) // comparing function
         sum+=abs(arr[i]-arr[i-1]);
         
     }
-    return sum;
+    print("%d", sum);
   }
   // Driver code
   int main() {
     int arr[] = {4,1,5};
     int n = sizeof(arr) / sizeof(arr[0]);
-    printf("Absolute sum is:%lld\n",diff(arr,n));
+    printf("Absolute sum is:\n",diff(arr,n));
     
   }
 
