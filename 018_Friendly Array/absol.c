@@ -31,7 +31,8 @@ int compare(const void* num1, const void* num2) // comparing function
   int main() {
     int arr[] = {4,1,5};
     int n = sizeof(arr) / sizeof(arr[0]);
-    printf("Absolute sum is:\n",diff(arr,n));
+    printf("Absolute sum is:\n",);
+    diff(arr,n);
     
   }
 
